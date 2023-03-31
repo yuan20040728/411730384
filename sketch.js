@@ -25,8 +25,8 @@ function draw() {
   line(points[points.length-1][0], points[points.length-1][1], points[0][0], points[0][1]); //把最後一點與第一點的連線
   
   for (let j = 0; j < points.length-1; j++) {//漸層函數
-    let from=color(100,300,150)
-    let to =color(100,200,250)
+    let from=color(200,150,100)
+    let to =color(120,200,300)
     stroke(lerpColor(from,to,j/points.length));
     line(points[j][0], points[j][1], points[j+1][0], points[j+1][1]);
   }
